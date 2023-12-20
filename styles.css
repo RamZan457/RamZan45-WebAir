@@ -1,15 +1,74 @@
+/* Root Variables */
+:root {
+  --orange: #f0a500;
+  --white: #f9f9f9;
+  --lightblue: #b9b9b9;
+}
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
 
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container h1 {
+  font-size: 15px;
+  color: var(--orange);
+  margin: 5px;
+}
+.account input {
+  padding: 10px 30px;
+  width: 65%;
+  margin: 5px;
+}
+.container .details {
+  display: flex;
+}
+.container .details .birth input {
+  padding: 5px;
+  width: 20%;
+}
+.details .gender input {
+  padding: 7px;
+  width: 20%;
+  margin: 0;
+}
 
+/* payment-details */
+.payment-details {
+  width: 65%;
+}
+.payment-details button {
+  margin: 20px 0px;
+  width: 48%;
+  padding: 20px 10px;
+  background-color: var(--lightblue);
+  border: 1px solid var(--lightblue);
+  border-radius: 5px;
+}
+button:first-of-type {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.payment-details input {
+  padding: 10px 30px;
+  width: 100%;
+  margin: 5px;
+}
+.payment-details #cvc {
+  width: 60%;
+}
 @media only screen and (max-width: 540px) {
   .col-half {
     width: 100%;

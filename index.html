@@ -16,15 +16,18 @@
   <body>
     <div class="container">
       <form>
-        <div>
-          <p>Account</p>
+        <!-- Account Div -->
+        <div class="account">
+          <h1>Account</h1>
           <input type="text" name="name" id="name" placeholder="Full Name" />
+          <br />
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Email Address"
           />
+          <br />
           <input
             type="password"
             name="password"
@@ -32,8 +35,40 @@
             placeholder="Password"
           />
         </div>
+        <!-- Details -->
+        <div class="details">
+          <div class="birth">
+            <h1>Date of Birth</h1>
+            <input type="number" name="date" id="date" placeholder="DD" />
+            <input type="number" name="month" id="month" placeholder="MM" />
+            <input type="number" name="year" id="year" placeholder="YYYY" />
+          </div>
+          <div class="gender">
+            <h1>Gender</h1>
+            <input type="text" name="male" id="male" placeholder="Male" />
+            <input type="text" name="female" id="female" placeholder="Female" />
+          </div>
+        </div>
+        <div class="payment-details">
+          <h1>Payment Details</h1>
+          <button>Credit Card</button>
+          <button>Paypal</button> <br />
+          <input type="text" name="card" id="card" /> <br />
+          <input type="text" name="cvc" id="cvc" />
+          <select name="date" id="date">
+            <option value="01 Jan">01 Jan</option>
+          </select>
+          <select name="year" id="year">
+            <option value="2015">2015</option>
+          </select>
+        </div>
         <div>
-          <label for=""></label>
+          <h1>Terms and Conditions</h1>
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms"
+            >I accept the terms and coditions for signing up to this service,
+            and hereby confirm I have read the privacy policy</label
+          >
         </div>
       </form>
     </div>
